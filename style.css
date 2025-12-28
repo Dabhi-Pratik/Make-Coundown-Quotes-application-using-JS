@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Background image */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("./img/p-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CARD */
+.slider {
+    width: 650px;
+    padding: 20px 40px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    text-align: center;
+
+    /* Glass effect */
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 25px 45px rgba(0, 0, 0, 0.35),
+        0 0 0 1px rgba(255, 255, 255, 0.15);
+    animation: fade 0.5s ease;
+    position: relative;
+}
+
+/* QUOTE ICON */
+.quote-icon {
+    font-size: 44px;
+    opacity: 0.9;
+    color: #ffd369;
+}
+
+/* QUOTE TEXT */
+#Quotes {
+    color: #f5f5f5;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.6;
+    margin: 15px 0;
+    /* color: #413f3f; */
+}
+
+/* AUTHOR */
+#Author {
+    margin-bottom: 25px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.406);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* BUTTONS */
+.btn-group {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.btn-group button {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #ffb347, #ffcc33);
+    color: #333;
+    font-size: 15px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn-group button:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 200, 60, 0.6);
+}
+
+/* ANIMATION */
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

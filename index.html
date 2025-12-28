@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make Coundown & Quotes application using JS</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="slider">
-        <p id="quotes">“Learning never exhausts the mind.”</p>
-        <p id="author">– Leonardo da Vinci</p>
+        <span class="quote-icon">❝</span>
+        <p id="Quotes">“Arise, awake, and stop not till the goal is reached.”</p>
+        <p id="Author">— Swami Vivekananda</p>
     </div>
     <div class="btn-group">
-        <button id="prev">Prev</button>
-        <button id="next">Next</button>
+        <button onclick="prevClick()">Prev</button>
+        <button onclick="nextClick()">Next</button>
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
