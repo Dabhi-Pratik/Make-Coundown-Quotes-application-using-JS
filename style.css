@@ -1,3 +1,4 @@
+/* Reset default browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: "Segoe UI", sans-serif;
 }
 
+/* Body background with image & overlay */
 body {
     min-height: 100vh;
     display: flex;
@@ -19,7 +21,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* CARD */
+/* Glassmorphism card */
 .slider {
     width: 650px;
     padding: 20px 40px 20px;
@@ -39,7 +41,7 @@ body {
     position: relative;
 }
 
-/* QUOTE ICON */
+/* Quote icon */
 .quote-icon {
     font-size: 44px;
     opacity: 0.9;
@@ -76,6 +78,7 @@ body {
     gap: 15px;
 }
 
+/* Buttons styling */
 .btn-group button {
     padding: 10px 22px;
     border: none;
@@ -94,7 +97,8 @@ body {
     box-shadow: 0 8px 20px rgba(255, 200, 60, 0.6);
 }
 
-/* ANIMATION */
+
+/* Fade animation */
 @keyframes fade {
     from {
         opacity: 0;

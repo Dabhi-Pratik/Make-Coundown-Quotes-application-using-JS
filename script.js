@@ -1,3 +1,4 @@
+// Array of quotes (text + author)
 const quotes = [
     {
         text: "Arise, awake, and stop not till the goal is reached.",
@@ -33,13 +34,18 @@ const quotes = [
     },
 ]
 
+// Index to track current quote
 let index = 0;
 
+// Selecting DOM elements
 let quoteE1 = document.getElementById("Quotes")
 let authorE1 = document.getElementById("Author")
 
+// Function to display quote
 function showQuotes() {
+     // Update quote text
     quoteE1.innerText = `${quotes[index].text}`;
+    // Update author name
     authorE1.innerText = `${quotes[index].author}`;
 }
 
@@ -54,6 +60,7 @@ const prevClick = () => {
     showQuotes();
 }
 
+// Automatically change quote every 3 seconds
 setInterval(nextClick = () => {
 
     index++;
